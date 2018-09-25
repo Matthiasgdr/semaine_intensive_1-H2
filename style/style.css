@@ -1,9 +1,20 @@
-.bg_image {
-  height: 100%;
-  width: 100%; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,800i");
+header.mainpage {
+  background-color: white;
+  padding: 20px; }
+  header.mainpage ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem; }
+    header.mainpage ul li {
+      padding: 0 50px; }
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 62.5%; }
 
 /*# sourceMappingURL=style.css.map */
