@@ -1,7 +1,10 @@
 header.mainpage{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
     background-color: $maincolor;
     padding: 20px;
-    height: 10vh;
+    box-shadow: 1px -20px 50px #1e1e1e;
     ul{
         display: flex;
         flex-direction: row;
@@ -20,10 +23,11 @@ header.mainpage{
 }
 .slider{
     display: flex;
-
+    position: relative;
+    background: url("../images/bg.png");
     font-family: $font;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     .description{
         display: flex;
         max-width: 30vw;
@@ -41,6 +45,13 @@ header.mainpage{
                     font-size: 2.2rem;
                 }
             }
+        }
+        .down{
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            height:50px;
+            width: 50px;
         }
     }
 main{
