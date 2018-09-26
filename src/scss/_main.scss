@@ -1,7 +1,13 @@
+.fixed{
+    position: sticky;
+    top:0px;
+    left: 0px;
+}
 header.mainpage{
-    position: fixed;
+    position: sticky;
+    top:0px;
+    left: 0px;
     z-index: 10;
-    width: 100%;
     background-color: $maincolor;
     padding: 20px;
     box-shadow: 1px -20px 50px #1e1e1e;
@@ -55,10 +61,20 @@ header.mainpage{
         }
     }
 main{
+    font-family: $font;
+    font-size: 2.4rem;
+    height: 100vh;
+    z-index: 5;
     position: relative;
     background-color: grey;
-    img{
+    .support{
+        padding: 20px 50px;
+        border-radius: 20px;
+        border: solid 1px black;
+        background-color:white;
         position: absolute;
-        width: 100%;
+        bottom: 8em;
+        left: 45%;
+        font-weight: bold;
     }
 }
