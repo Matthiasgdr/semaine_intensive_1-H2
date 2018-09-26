@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,800i");
 header.mainpage {
   background-color: white;
-  padding: 20px; }
+  padding: 20px;
+  height: 10vh; }
   header.mainpage ul {
     display: flex;
     flex-direction: row;
@@ -11,6 +12,36 @@ header.mainpage {
     font-size: 2.4rem; }
     header.mainpage ul li {
       padding: 0 50px; }
+    header.mainpage ul img {
+      height: 60px;
+      width: 200px; }
+
+.slider {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  height: 90vh; }
+  .slider .description {
+    display: flex;
+    max-width: 30vw;
+    margin-left: 20vw; }
+    .slider .description img {
+      width: 100px;
+      height: 100px;
+      margin: 0 20px;
+      border-radius: 5px;
+      background-color: grey; }
+    .slider .description .message {
+      font-size: 2rem; }
+      .slider .description .message h1 {
+        font-size: 2.2rem; }
+
+main {
+  position: relative;
+  background-color: grey; }
+  main img {
+    position: absolute;
+    width: 100%; }
 
 * {
   padding: 0;

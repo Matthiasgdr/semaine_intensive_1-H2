@@ -1,6 +1,7 @@
 header.mainpage{
     background-color: $maincolor;
     padding: 20px;
+    height: 10vh;
     ul{
         display: flex;
         flex-direction: row;
@@ -11,5 +12,42 @@ header.mainpage{
         li{
             padding: 0 50px;
         }
+        img{
+            height:60px;
+            width:200px;
+        }
+    }
+}
+.slider{
+    display: flex;
+
+    font-family: $font;
+    align-items: center;
+    height: 90vh;
+    .description{
+        display: flex;
+        max-width: 30vw;
+        margin-left: 20vw;
+            img{
+                width: 100px;
+                height:100px;
+                margin: 0 20px;
+                border-radius: 5px;
+                background-color: grey;
+            }
+            .message{
+                font-size: 2rem;
+                h1{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+main{
+    position: relative;
+    background-color: grey;
+    img{
+        position: absolute;
+        width: 100%;
     }
 }
