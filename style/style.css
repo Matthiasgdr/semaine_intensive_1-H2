@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,800i,400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,500,600,700,800,900");
+body {
+  background-color: #1e1e1e; }
+
 a.active_page {
   text-decoration: none;
   color: white;
@@ -12,6 +15,10 @@ a.active_page {
     width: 100%;
     height: 5px;
     transition: all 0.2s; }
+
+::selection {
+  background-color: #EBC244;
+  color: white; }
 
 header.mainpage {
   position: fixed;
@@ -29,8 +36,10 @@ header.mainpage {
     header.mainpage ul li {
       position: relative;
       padding: 0 50px;
-      font-size: 2.6rem;
-      font-weight: 700; }
+      font-size: 2.8rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
       header.mainpage ul li .link {
         text-decoration: none;
         color: white;
@@ -39,7 +48,7 @@ header.mainpage {
           content: '';
           position: absolute;
           background-color: #EBC244;
-          bottom: -8px;
+          bottom: -10px;
           right: 0;
           width: 0%;
           height: 5px;
@@ -65,12 +74,22 @@ header.mainpage {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -5; }
+    z-index: -5;
+    filter: contrast(70%); }
+    .slider .background::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); }
   .slider .description {
     display: flex;
     z-index: 1;
     max-width: 30vw;
-    margin-left: 20vw; }
+    margin-left: 20vw;
+    color: white; }
     .slider .description img {
       width: 100px;
       height: 100px;
@@ -81,6 +100,8 @@ header.mainpage {
       font-size: 2rem; }
       .slider .description .message h1 {
         font-size: 2.2rem; }
+      .slider .description .message p {
+        font-size: 1.8rem; }
   .slider .down {
     position: absolute;
     bottom: 50px;
@@ -90,25 +111,39 @@ header.mainpage {
 
 main {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.4rem;
+  font-size: 3rem;
   height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  background-color: grey; }
+  background-color: #181818; }
   main .support {
+    color: white;
     margin-bottom: 80px;
     padding: 20px 50px;
     border-radius: 50px;
-    border: solid 3px #EBC244;
-    background-color: white;
     font-weight: bold; }
+    main .support p {
+      position: relative;
+      font-size: 2.4rem; }
+      main .support p::after {
+        content: '';
+        position: absolute;
+        bottom: -9px;
+        left: 0;
+        width: 40%;
+        height: 2px;
+        background-color: #EBC244;
+        transition: all 0.2s; }
+  main .support:hover p::after {
+    width: 120%;
+    left: -76px; }
 
 footer {
   color: white;
   position: relative;
-  background-color: #1e1e1e;
+  background: linear-gradient(to top, #393939, #181818);
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -116,15 +151,29 @@ footer {
   footer .share {
     display: flex;
     flex-direction: column;
-    font-size: 2.4rem; }
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
     footer .share__button {
-      color: #1e1e1e;
-      border: solid 1px white;
-      padding: 5px 100px;
-      background-color: white;
-      margin: 10px 0; }
+      color: white;
+      padding: 5px 150px;
+      margin: 10px 0;
+      border-radius: 20px;
+      font-weight: 500; }
     footer .share p {
-      text-align: center; }
+      font-weight: 800;
+      margin: 0 0 30px 0; }
+
+.twitter {
+  background-color: #1F95E0; }
+
+.instagram {
+  background: linear-gradient(to left, #6050CA, #CB39A3, #F54F51, #FDCF54);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.facebook {
+  background-color: #38589A; }
 
 * {
   padding: 0;
