@@ -361,7 +361,8 @@ footer {
       display: flex; }
       .species .first_species .second_of_four_text {
         text-align: left;
-        margin: 0 50px; }
+        margin: 0 50px;
+        max-width: 350px; }
 
 .plus_icon {
   width: 50px;
