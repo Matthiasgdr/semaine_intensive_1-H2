@@ -128,17 +128,18 @@
         }
     }
 .species{
+    position: relative;
     height: 100vh;
     background-color: #181818;
     .wave_container{
-        position: relative;
+        position: absolute;
         width:100%;
         height:100%;
         color: white;
         .wave{
             position: absolute;
             top:20%;
-            left:35%;
+            left:33%;
             border: solid 1px grey;
             height: 300px;
             width: 550px;
@@ -164,6 +165,42 @@
                 animation: 8s infinite linear wave3;
                 // border: solid 1px yellow;
 
+            }
+        }
+        .white_round{
+            width: 50px;
+            height: 50px;
+            border: 4px solid white;
+            border-radius: 50px;
+        }
+        .first_species{
+            font-family: $font;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-size: 8rem;
+            padding: 140px 0 0 0;
+            h2{
+                font-size: 3rem;
+                margin: 0 0 20px 0;
+            }
+            p{
+                font-weight: 300;
+                margin: 5px 0;
+            }
+            .first_of_four{
+                display: flex;
+                &_text{
+                    text-align: right;
+                    margin:0 50px;
+                }
+            }
+            .second_of_four{
+                display: flex;
+                &_text{
+                    text-align: left;
+                    margin: 0 50px;
+                }
             }
         }
     }
