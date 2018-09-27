@@ -1,0 +1,131 @@
+body{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 700px;
+  background-color: grey;
+}
+
+.bikePieces {
+  position: absolute;
+}
+
+#guidon{
+  left: 200px;
+  top: 450px;
+  transition: all 1.2s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 100%;
+  z-index: 1;
+}
+#guidon img{
+  width: 103px;
+  transition: all 0.5s ease-in-out;
+}
+#selle{
+  left: 280px;
+  top: 100px;
+  transition: all 1.4s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 100%;
+  z-index: 1;
+
+}
+#selle img{
+  width: 125px;
+  transition: all 0.5s ease-in-out;
+}
+#roue_arriere{
+  left: 650px;
+  top: 20px;
+  transition: all 1.8s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 100%;
+  z-index: 1;
+
+}
+#roue_arriere img{
+  width: 304px;
+  transition: all 0.5s ease-in-out;
+
+}
+#roue_avant{
+  left: 20px;
+  top: 130px;
+  transition: all 1.6s ease-in-out;
+  transition-delay: 0.1s;
+  border-radius: 100%;
+  z-index: 1;
+}
+#roue_avant img{
+  width: 277px;
+  transition: all 0.5s ease-in-out;
+}
+
+#cadre{
+  border-radius: 100%;
+  left: 600px;
+  top: 300px;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.1s;
+  z-index: 1;
+
+}
+#cadre img{
+  width: 271px;
+  transition: all 0.5s ease-in-out;
+
+}
+.text{
+  position: absolute;
+  color: rgba(255,255,255,0);
+  border-left: none;
+  font-size: 16px;
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: bold;
+  padding-left: 10px;
+  line-height: 20px;
+}
+#firstP{
+  left: 830px;
+  top: 460px;
+  width: 300px;
+}
+#secondP{
+  left: 326px;
+  top: 274px;
+  width: 300px;
+}
+#thirdP{
+  left: 316px;
+  top: 340px;
+  width: 280px;
+}
+#fourthP{
+  left: 420.5px;
+  top: 21px;
+  width: 220px;
+}
+#fifthP{
+  left:880px;
+  top:320px;
+  width: 200px;
+}
+#guidon:hover img, #selle:hover img, #roue_avant:hover img, #roue_arriere:hover img, #cadre:hover img{
+  width: 110%;
+  filter: drop-shadow(0 0 5px black);
+  transition: all 0.5s ease-in-out;
+}
+
+#guidon:hover, #selle:hover, #roue_avant:hover, #roue_arriere:hover, #cadre:hover{
+  z-index: 5;
+  transition: z-index 1.5s, left 1.5s ease-in-out, top 1.5s ease-in-out;
+}
+
+#guidon:hover + .text, #selle:hover + .text, #roue_avant:hover + .text, #roue_arriere:hover + .text, #cadre:hover + .text{
+  color: rgba(255,255,255,1);
+  border-left: 4px #EBC244 solid;
+  transition: left 1.2s ease-in-out, top 1.2s ease-in-out, color 1s ease, border 1s ease;
+  transition-delay: 0.1s;
+  z-index: 6;
+}
