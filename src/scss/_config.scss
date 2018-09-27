@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,500,600,700,800,900');
 
+@keyframes wave1 {
+  from {
+        transform: rotate(12deg);
+        border-radius: 150px;
+  }
+  50%{
+        transform: rotate(192deg);
+        border-radius: 250px;
+  }
+  to {
+        transform: rotate(372deg);
+        border-radius: 150px;
+  }
+}
+@keyframes wave2 {
+  from {
+        transform: rotate(60deg);
+        border-radius: 200px;
+  }
+  50%{
+        transform: rotate(240deg);
+        border-radius: 150px;
+
+  }
+  to {
+        transform: rotate(420deg);
+        border-radius: 200px;
+
+  }
+}
+@keyframes wave3 {
+  from {
+        transform: rotate(128deg);
+        border-radius: 250px;
+  }
+  50%{
+        transform: rotate(308deg);
+        border-radius: 150px;
+  }
+  to {
+        transform: rotate(488deg);
+        border-radius: 250px;
+  }
+}
+
 $font: 'Montserrat', sans-serif;
 $maincolor: white;
 $colortwo: #EBC244;
