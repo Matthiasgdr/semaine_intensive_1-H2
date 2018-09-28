@@ -65,7 +65,7 @@ function activeDot() {
   let h1 = ['DIY CUSTOM BUILD','UNLIMITED UPGRADES', '40 KM/H TOP SPEED', 'CARBON FIBER FRAME', '350 MID-DRIVE MOTOR', 'CUSTOMIZABLE SETTINGS', '']
   let activeH1 = document.querySelector('h1')
   activeH1.innerHTML = `${h1[iconeActive - 1]}`
-  let paragraph = ['The Sterka M1 is a high performance kit with custom features and modular adaptability.','You are free to choose all the settings. Then you will have a totally personalized E-bike.', 'Thanks to high-level engineering the Sterka M1 is able to reach really speed which makes it one of the fastest electronic bike.','Sterka Concept cares about using components of the highest quality. Carbon fiber enables better speed and lower weight.', '', ' The Sterka M1 is meant to become yours that’s why it is entirely customizable in order to perfectly fit your lifestyle needs.']
+  let paragraph = ['The Sterka M1 is a high performance kit with custom features and modular adaptability.','You are free to choose all the settings. Then you will have a totally personalized E-bike.', 'Thanks to high-level engineering the Sterka M1 is able to reach really speed which makes it one of the fastest electronic bike.','Sterka Concept cares about using components of the highest quality. Carbon fiber enables better speed and lower weight.', 'the Sterka M1 uses this one powerful motor which insures a suffisant confort for the rider while climbing hills and optimizes energy saving.', ' The Sterka M1 is meant to become yours that’s why it is entirely customizable in order to perfectly fit your lifestyle needs.']
   let activeParagraphe = document.querySelector('.message p')
   activeParagraphe.innerHTML = `${paragraph[iconeActive - 1]}`
 }
