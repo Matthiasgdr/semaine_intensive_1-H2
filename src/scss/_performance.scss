@@ -163,6 +163,14 @@
     position: relative;
     height: 100vh;
     background-color: #181818;
+    .tech_specs{
+        position: absolute;
+        font-size: 5rem;
+        top: 40%;
+        left:39%;
+        color: white;
+        text-transform: uppercase;
+    }
     .wave_container{
         position: absolute;
         width:100%;
