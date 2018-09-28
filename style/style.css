@@ -179,6 +179,7 @@ footer {
   background: linear-gradient(to top, #393939, #181818);
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px;
   z-index: 15; }
   footer .share {
@@ -199,6 +200,16 @@ footer {
       font-family: "Montserrat", sans-serif;
       font-weight: 800;
       margin: 0 0 30px 0; }
+  footer .follow {
+    position: absolute;
+    bottom: 50px;
+    right: 200px; }
+    footer .follow p {
+      font-size: 2.4rem;
+      text-align: center;
+      margin: 0 0 20px 0; }
+    footer .follow img {
+      margin: 0 10px; }
 
 .twitter {
   background-color: #1F95E0; }
@@ -361,11 +372,24 @@ footer {
     height: 50px;
     width: 50px; }
 
+.support_button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  padding: 20px 50px;
+  font-size: 2.4rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: #EBC244;
+  z-index: 80;
+  border-radius: 5px; }
+
 .first_screen {
   position: relative;
   display: flex;
   height: 100vh;
-  color: white; }
+  color: white;
+  font-family: "Montserrat", sans-serif; }
   .first_screen .background_perfo {
     position: absolute;
     top: 0;
@@ -408,7 +432,8 @@ footer {
   position: relative;
   display: flex;
   height: 100vh;
-  color: white; }
+  color: white;
+  font-family: "Montserrat", sans-serif; }
   .second_screen .background_perfo {
     position: absolute;
     top: 0;
@@ -502,6 +527,30 @@ footer {
         text-align: left;
         margin: 0 50px;
         max-width: 350px; }
+  .species .second_species {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 8rem;
+    padding: 40px 250px 0 150px; }
+    .species .second_species h2 {
+      font-size: 3rem;
+      margin: 0 0 20px 0; }
+    .species .second_species p {
+      font-weight: 300;
+      margin: 5px 0; }
+    .species .second_species .third_of_four {
+      display: flex; }
+      .species .second_species .third_of_four_text {
+        text-align: right;
+        margin: 0 50px; }
+    .species .second_species .four_of_four {
+      display: flex; }
+      .species .second_species .four_of_four_text {
+        text-align: left;
+        margin: 0 50px;
+        max-width: 350px; }
 
 .plus_icon {
   width: 50px;
@@ -510,6 +559,14 @@ footer {
   transition-timing-function: ease-in-out; }
   .plus_icon:hover {
     transform: rotate(360deg); }
+
+.the_team {
+  display: flex;
+  height: 100vh; }
+  .the_team .jjwang {
+    width: 50vw; }
+  .the_team .rickwang {
+    width: 50vw; }
 
 * {
   padding: 0;
