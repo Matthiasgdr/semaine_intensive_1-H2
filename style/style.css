@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,500,600,700,800,90");
 @import url("https://fonts.googleapis.com/css?family=Anton");
+@keyframes wave1 {
+  from {
+    transform: rotate(12deg);
+    border-radius: 150px; }
+  50% {
+    transform: rotate(192deg);
+    border-radius: 250px; }
+  to {
+    transform: rotate(372deg);
+    border-radius: 150px; } }
+@keyframes wave2 {
+  from {
+    transform: rotate(60deg);
+    border-radius: 200px; }
+  50% {
+    transform: rotate(240deg);
+    border-radius: 150px; }
+  to {
+    transform: rotate(420deg);
+    border-radius: 200px; } }
+@keyframes wave3 {
+  from {
+    transform: rotate(128deg);
+    border-radius: 250px; }
+  50% {
+    transform: rotate(308deg);
+    border-radius: 150px; }
+  to {
+    transform: rotate(488deg);
+    border-radius: 250px; } }
 body {
   background-color: #1e1e1e; }
 
@@ -61,6 +91,14 @@ header.mainpage {
       height: 60px;
       width: 200px; }
 
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10; }
+
 .slider {
   display: flex;
   position: sticky;
@@ -69,22 +107,6 @@ header.mainpage {
   font-family: "Montserrat", sans-serif;
   align-items: center;
   height: 100vh; }
-  .slider .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -5;
-    filter: contrast(70%); }
-    .slider .background::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.2); }
   .slider .description {
     display: flex;
     z-index: 1;
@@ -151,6 +173,7 @@ main {
       width: 400px; }
 
 footer {
+  font-family: "Montserrat", sans-serif;
   color: white;
   position: relative;
   background: linear-gradient(to top, #393939, #181818);
@@ -161,9 +184,8 @@ footer {
   footer .share {
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: center;
-    letter-spacing: 1px;
     text-transform: uppercase; }
     footer .share__button {
       font-family: "Montserrat", sans-serif;
@@ -313,6 +335,181 @@ footer {
   transition: left 1.2s ease-in-out, top 1.2s ease-in-out, color 1s ease, border 1s ease;
   transition-delay: 0.3s;
   z-index: 6; }
+
+.presentation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  z-index: -10; }
+  .presentation h1 {
+    font-size: 9rem;
+    text-transform: uppercase;
+    max-width: 900px; }
+  .presentation p {
+    font-size: 2.4rem;
+    max-width: 900px;
+    text-align: center; }
+  .presentation .down {
+    margin: 20em 0 60px 0;
+    height: 50px;
+    width: 50px; }
+
+.first_screen {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  color: white; }
+  .first_screen .background_perfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .first_screen .left {
+    width: 50vw; }
+    .first_screen .left h3 {
+      margin: 120px 90px 0 90px;
+      font-size: 15rem;
+      text-transform: uppercase; }
+    .first_screen .left p {
+      margin: 0 90px;
+      font-size: 2.3rem; }
+  .first_screen .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw; }
+    .first_screen .right .items {
+      margin: 0 0 0 30px; }
+      .first_screen .right .items h3 {
+        font-size: 2rem; }
+      .first_screen .right .items p {
+        font-size: 1.6rem;
+        line-height: 1.5em; }
+    .first_screen .right .items-w-icon {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 40px 150px; }
+
+.second_screen {
+  position: sticky;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  color: white; }
+  .second_screen .background_perfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .second_screen .left {
+    width: 50vw; }
+    .second_screen .left h3 {
+      margin: 120px 90px 0 90px;
+      font-size: 15rem;
+      text-transform: uppercase; }
+    .second_screen .left p {
+      margin: 0 90px;
+      font-size: 2.3rem; }
+  .second_screen .right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw; }
+    .second_screen .right .items {
+      margin: 0 0 0 30px; }
+      .second_screen .right .items h3 {
+        font-size: 2rem; }
+      .second_screen .right .items p {
+        font-size: 1.6rem;
+        line-height: 1.5em; }
+    .second_screen .right .items-w-icon {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin: 40px 150px; }
+
+.species {
+  position: relative;
+  height: 100vh;
+  background-color: #181818; }
+  .species .wave_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white; }
+    .species .wave_container .wave {
+      position: absolute;
+      top: 20%;
+      left: 33%;
+      border: solid 1px grey;
+      height: 300px;
+      width: 550px;
+      height: 550px; }
+    .species .wave_container #wave1 {
+      transform: rotate(12deg);
+      border-radius: 150px;
+      animation: 8s infinite linear wave1; }
+    .species .wave_container #wave2 {
+      transform: rotate(60deg);
+      border-radius: 200px;
+      animation: 8s infinite linear wave2; }
+    .species .wave_container #wave3 {
+      transform: rotate(98deg);
+      border-radius: 250px;
+      animation: 8s infinite linear wave3; }
+  .species .white_round {
+    width: 50px;
+    height: 50px;
+    border: 4px solid white;
+    border-radius: 50px; }
+  .species .first_species {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 8rem;
+    padding: 140px 0 0 0; }
+    .species .first_species h2 {
+      font-size: 3rem;
+      margin: 0 0 20px 0; }
+    .species .first_species p {
+      font-weight: 300;
+      margin: 5px 0; }
+    .species .first_species .first_of_four {
+      display: flex; }
+      .species .first_species .first_of_four_text {
+        text-align: right;
+        margin: 0 50px; }
+    .species .first_species .second_of_four {
+      display: flex; }
+      .species .first_species .second_of_four_text {
+        text-align: left;
+        margin: 0 50px;
+        max-width: 350px; }
+
+.plus_icon {
+  width: 50px;
+  height: 50px;
+  transition: all 1s;
+  transition-timing-function: ease-in-out; }
+  .plus_icon:hover {
+    transform: rotate(360deg); }
 
 * {
   padding: 0;
