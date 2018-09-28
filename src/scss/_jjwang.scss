@@ -1,0 +1,36 @@
+article {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    color: white;
+    .jj__wang{
+        width: 50vw;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .jj_wang_text{
+        width: 50vw;
+        white-space: pre-line;
+        color: white;
+        text-align: right;
+        font-size: 4rem;
+        font-family: $font;
+        h1{
+            margin: 100px 100px 20px 0px;;
+        }
+        h2{
+            white-space: pre-line;
+            margin: 20px 100px;
+        }
+        p{
+            font-size: 2rem;
+            white-space: pre-line;
+            margin: 20px 100px;
+            strong{
+                font-size: 2rem;
+            }
+        }
+    }
+}

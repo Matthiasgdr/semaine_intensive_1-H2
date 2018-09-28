@@ -2,6 +2,10 @@
     position: relative;
     display: flex;
     height: 100vh;
+    a{
+        text-decoration: none;
+        color:white;
+    }
     .background{
         position: absolute;
         top:0;
@@ -38,9 +42,6 @@
             font-size: 3.4rem;
             color: white;
             text-align: center;
-            &::after{
-
-            }
         }
     }
     .rickwang{

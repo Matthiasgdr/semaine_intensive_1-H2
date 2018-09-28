@@ -600,6 +600,9 @@ footer {
   display: flex;
   height: 100vh;
   font-family: "Montserrat", sans-serif; }
+  .the_team a {
+    text-decoration: none;
+    color: white; }
   .the_team .background {
     position: absolute;
     top: 0;
@@ -642,6 +645,35 @@ footer {
       font-size: 3.4rem;
       color: white;
       text-align: center; }
+
+article {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  color: white; }
+  article .jj__wang {
+    width: 50vw; }
+    article .jj__wang img {
+      height: 100%;
+      width: 100%; }
+  article .jj_wang_text {
+    width: 50vw;
+    white-space: pre-line;
+    color: white;
+    text-align: right;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif; }
+    article .jj_wang_text h1 {
+      margin: 100px 100px 20px 0px; }
+    article .jj_wang_text h2 {
+      white-space: pre-line;
+      margin: 20px 100px; }
+    article .jj_wang_text p {
+      font-size: 2rem;
+      white-space: pre-line;
+      margin: 20px 100px; }
+      article .jj_wang_text p strong {
+        font-size: 2rem; }
 
 * {
   padding: 0;
