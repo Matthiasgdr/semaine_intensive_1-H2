@@ -560,6 +560,14 @@ footer {
   .plus_icon:hover {
     transform: rotate(360deg); }
 
+.the_team {
+  display: flex;
+  height: 100vh; }
+  .the_team .jjwang {
+    width: 50vw; }
+  .the_team .rickwang {
+    width: 50vw; }
+
 * {
   padding: 0;
   margin: 0;
