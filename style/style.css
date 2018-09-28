@@ -121,13 +121,6 @@ header.mainpage {
         cursor: pointer; }
       .slider .description .message .onfocus {
         background-color: #edc345; }
-  .slider .circle {
-    width: 80px;
-    height: 80px;
-    border: 1px solid black;
-    position: absolute;
-    bottom: 50px;
-    left: 50%; }
   .slider .down {
     position: absolute;
     bottom: 50px;
