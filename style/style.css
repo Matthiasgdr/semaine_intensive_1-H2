@@ -105,8 +105,7 @@ header.mainpage {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -5;
-    filter: contrast(70%); }
+    z-index: -5; }
     .slider .background::after {
       content: '';
       position: absolute;
@@ -221,6 +220,8 @@ footer {
       text-align: center;
       margin: 0 0 20px 0; }
     footer .follow img {
+      width: 80px;
+      height: 80px;
       margin: 0 10px; }
 
 .twitter {
@@ -371,6 +372,21 @@ footer {
   color: white;
   font-family: "Montserrat", sans-serif;
   z-index: -10; }
+  .presentation .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5; }
+    .presentation .background::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); }
   .presentation h1 {
     font-size: 9rem;
     text-transform: uppercase;
@@ -577,6 +593,21 @@ footer {
   display: flex;
   height: 100vh;
   font-family: "Montserrat", sans-serif; }
+  .the_team .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5; }
+    .the_team .background::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); }
   .the_team h2 {
     position: absolute;
     top: 30%;

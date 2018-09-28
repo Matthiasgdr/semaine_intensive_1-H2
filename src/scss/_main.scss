@@ -81,7 +81,6 @@ header.mainpage{
         width:100%;
         height:100%;
         z-index: -5;
-        filter: contrast(70%);
         &::after{
             content: '';
             position: absolute;
@@ -213,6 +212,8 @@ footer{
             margin: 0 0 20px 0;
         }
         img{
+            width: 80px;
+            height: 80px;
             margin: 0 10px;
         }
     }
@@ -222,7 +223,6 @@ footer{
 }
 .instagram{
     background: linear-gradient(to left, #6050CA, #CB39A3, #F54F51, #FDCF54 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 .facebook{
     background-color: #38589A;
