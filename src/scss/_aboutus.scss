@@ -1,0 +1,41 @@
+.the_team{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    font-family: $font;
+    h2{
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        font-size: 8rem;
+        color: white;
+        text-transform: uppercase;
+    }
+    .jjwang{
+        width: 50vw;
+        background: url(../images/jj_wang.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        p{
+            padding: 70vh 0 0 0;
+            font-size: 3.4rem;
+            color: white;
+            text-align: center;
+            &::after{
+                
+            }
+        }
+    }
+    .rickwang{
+        width: 50vw;
+        background: url(../images/rick_wang.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        p{
+            padding: 70vh 0 0 0;
+            font-size: 3.4rem;
+            color: white;
+            text-align: center;
+        }
+    }
+}
