@@ -25,11 +25,25 @@
         width: 50px;
     }
 }
+    .support_button{
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        padding: 20px 50px;
+        font-size: 2.4rem;
+        font-family: $font;
+        color: white;
+        background-color: $colortwo;
+        z-index: 80;
+        border-radius: 5px;
+
+    }
     .first_screen{
         position: relative;
         display: flex;
         height: 100vh;
         color: $maincolor;
+        font-family: $font;
         .background_perfo{
             position: absolute;
             top:0;
@@ -82,6 +96,7 @@
         display: flex;
         height: 100vh;
         color: $maincolor;
+        font-family: $font;
         .background_perfo{
             position: absolute;
             top:0;
@@ -196,6 +211,37 @@
                 }
             }
             .second_of_four{
+                display: flex;
+                &_text{
+                    text-align: left;
+                    margin: 0 50px;
+                    max-width: 350px;
+                }
+            }
+        }
+        .second_species{
+            font-family: $font;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 8rem;
+            padding: 40px 250px 0 150px;
+            h2{
+                font-size: 3rem;
+                margin: 0 0 20px 0;
+            }
+            p{
+                font-weight: 300;
+                margin: 5px 0;
+            }
+            .third_of_four{
+                display: flex;
+                &_text{
+                    text-align: right;
+                    margin:0 50px;
+                }
+            }
+            .four_of_four{
                 display: flex;
                 &_text{
                     text-align: left;
