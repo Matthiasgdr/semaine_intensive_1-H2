@@ -35,7 +35,7 @@ header.mainpage{
         font-family: $font;
         li{
             position: relative;
-            padding: 0 50px;
+            padding: 0 36px;
             font-size: 2.8rem;
             font-weight: bold;
             text-transform: uppercase;
@@ -95,68 +95,85 @@ header.mainpage{
     .description{
         display: flex;
         z-index: 1;
-        max-width: 30vw;
-        margin-left: 20vw;
+        max-width: 65vw;
+        margin-left: 4vw;
         color:white;
             img{
-                width: 100px;
-                height:100px;
                 margin: 0 20px;
                 border-radius: 5px;
-                background-color: grey;
+                width: 190px;
+                height: 190px;
             }
             .message{
                 font-size: 2rem;
                 h1{
-                    font-size: 2.2rem;
-
+                    font-family: $font2;
+                    letter-spacing: 3px;
+                    font-size: 4rem;
+                    font-weight: lighter;
                 }
                 p{
-                    font-size: 1.8rem;
+                    width: 90%;
+                    font-size: 1.2em;
+                    line-height: 3rem;
+                    font-weight: 400;
+                    height: 92px;
+                }
+                .sliderDot{
+                  width: 26px;
+                  height: 26px;
+                  border-radius: 100%;
+                  background-color: rgba(255,255,255, 0.65);
+                  display: inline-block;
+                  margin-left: 26px;
+                  margin-top: 20px;
+                }
+                .sliderDot:hover{
+                  cursor: pointer;
+                }
+                .onfocus{
+                  background-color: rgb(237, 195, 69);
                 }
             }
+        }
+        .circle{
+          width: 80px;
+          height: 80px;
+          border: 1px solid black;
+          position: absolute;
+          bottom: 50px;
+          left: 50%;
         }
         .down{
             position: absolute;
             bottom: 50px;
             left: 50%;
-            height:50px;
-            width: 50px;
+            height:40px;
+            width: 40px;
+            transform: rotate(45deg);
+            border-right: 4px solid black;
+            border-bottom: 4px solid black;
+            transition: all 0.7s ease-in-out;
         }
     }
+.down:hover{
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+}
 main{
     font-family: $font;
     font-size: 3rem;
-    height: 100vh;
+    height: 900px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     background-color: #181818;
-    .support{
-        color:white;
-        margin-bottom: 80px;
-        padding: 20px 50px;
-        border-radius: 50px;
-        font-weight: bold;
-        p{
-            position: relative;
-            font-size: 2.4rem;
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: -9px;
-                left: 0;
-                width: 40%;
-                height: 2px;
-                background-color: $colortwo;
-                transition: all 0.2s;
-            }
-        }
-    }
-    .support:hover p::after{
-        width:120%;
-        left:-76px;
+    .support_project{
+      width: 400px;
+      margin: 0 auto;
+      img{
+        width: 400px;
+      }
     }
 }
 footer{
@@ -175,13 +192,16 @@ footer{
         letter-spacing: 1px;
         text-transform: uppercase;
         &__button{
+            font-family: $font;
             color: white;
             padding: 5px 150px;
             margin: 10px 0;
             border-radius: 20px;
             font-weight: 500;
+            cursor: pointer;
         }
         p{
+            font-family: $font;
             font-weight: 800;
             margin: 0 0 30px 0;
         }
@@ -196,4 +216,10 @@ footer{
 }
 .facebook{
     background-color: #38589A;
+}
+
+@media only screen and (max-width: 1450px){
+  .message p{
+    width: 100%;
+  }
 }

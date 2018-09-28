@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,300,400,500,600,700,800,90");
+@import url("https://fonts.googleapis.com/css?family=Anton");
 body {
   background-color: #1e1e1e; }
 
@@ -35,7 +36,7 @@ header.mainpage {
     font-family: "Montserrat", sans-serif; }
     header.mainpage ul li {
       position: relative;
-      padding: 0 50px;
+      padding: 0 36px;
       font-size: 2.8rem;
       font-weight: bold;
       text-transform: uppercase;
@@ -87,58 +88,74 @@ header.mainpage {
   .slider .description {
     display: flex;
     z-index: 1;
-    max-width: 30vw;
-    margin-left: 20vw;
+    max-width: 65vw;
+    margin-left: 4vw;
     color: white; }
     .slider .description img {
-      width: 100px;
-      height: 100px;
       margin: 0 20px;
       border-radius: 5px;
-      background-color: grey; }
+      width: 190px;
+      height: 190px; }
     .slider .description .message {
       font-size: 2rem; }
       .slider .description .message h1 {
-        font-size: 2.2rem; }
+        font-family: "Anton", sans-serif;
+        letter-spacing: 3px;
+        font-size: 4rem;
+        font-weight: lighter; }
       .slider .description .message p {
-        font-size: 1.8rem; }
+        width: 90%;
+        font-size: 1.2em;
+        line-height: 3rem;
+        font-weight: 400;
+        height: 92px; }
+      .slider .description .message .sliderDot {
+        width: 26px;
+        height: 26px;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0.65);
+        display: inline-block;
+        margin-left: 26px;
+        margin-top: 20px; }
+      .slider .description .message .sliderDot:hover {
+        cursor: pointer; }
+      .slider .description .message .onfocus {
+        background-color: #edc345; }
+  .slider .circle {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 50px;
+    left: 50%; }
   .slider .down {
     position: absolute;
     bottom: 50px;
     left: 50%;
-    height: 50px;
-    width: 50px; }
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    transition: all 0.7s ease-in-out; }
+
+.down:hover {
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white; }
 
 main {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  height: 100vh;
+  height: 900px;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   background-color: #181818; }
-  main .support {
-    color: white;
-    margin-bottom: 80px;
-    padding: 20px 50px;
-    border-radius: 50px;
-    font-weight: bold; }
-    main .support p {
-      position: relative;
-      font-size: 2.4rem; }
-      main .support p::after {
-        content: '';
-        position: absolute;
-        bottom: -9px;
-        left: 0;
-        width: 40%;
-        height: 2px;
-        background-color: #EBC244;
-        transition: all 0.2s; }
-  main .support:hover p::after {
-    width: 120%;
-    left: -76px; }
+  main .support_project {
+    width: 400px;
+    margin: 0 auto; }
+    main .support_project img {
+      width: 400px; }
 
 footer {
   color: white;
@@ -156,12 +173,15 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase; }
     footer .share__button {
+      font-family: "Montserrat", sans-serif;
       color: white;
       padding: 5px 150px;
       margin: 10px 0;
       border-radius: 20px;
-      font-weight: 500; }
+      font-weight: 500;
+      cursor: pointer; }
     footer .share p {
+      font-family: "Montserrat", sans-serif;
       font-weight: 800;
       margin: 0 0 30px 0; }
 
@@ -174,6 +194,132 @@ footer {
 
 .facebook {
   background-color: #38589A; }
+
+@media only screen and (max-width: 1450px) {
+  .message p {
+    width: 100%; } }
+.bike {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 110vh; }
+
+.bikePieces {
+  position: absolute; }
+
+#guidon {
+  left: 200px;
+  top: 450px;
+  transition: all 1.2s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 100%;
+  z-index: 1; }
+
+#guidon img {
+  width: 103px;
+  transition: all 0.5s ease-in-out; }
+
+#selle {
+  left: 280px;
+  top: 100px;
+  transition: all 1.4s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 100%;
+  z-index: 1; }
+
+#selle img {
+  width: 125px;
+  transition: all 0.5s ease-in-out; }
+
+#roue_arriere {
+  left: 650px;
+  top: 20px;
+  transition: all 1.8s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 100%;
+  z-index: 1; }
+
+#roue_arriere img {
+  width: 304px;
+  transition: all 0.5s ease-in-out; }
+
+#roue_avant {
+  left: 20px;
+  top: 130px;
+  transition: all 1.6s ease-in-out;
+  transition-delay: 0.3s;
+  border-radius: 100%;
+  z-index: 1; }
+
+#roue_avant img {
+  width: 277px;
+  transition: all 0.5s ease-in-out; }
+
+#cadre {
+  border-radius: 100%;
+  left: 600px;
+  top: 300px;
+  transition: all 1s ease-in-out;
+  transition-delay: 0.3s;
+  z-index: 2; }
+
+#cadre img {
+  width: 271px;
+  transition: all 0.5s ease-in-out; }
+
+.text {
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  border-left: none;
+  font-size: 2.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+  line-height: 20px; }
+  .text li {
+    font-size: 1.6rem;
+    margin-left: 30px; }
+
+#firstP {
+  left: 830px;
+  top: 460px;
+  width: 300px; }
+
+#secondP {
+  left: 326px;
+  top: 274px;
+  width: 300px; }
+
+#thirdP {
+  left: 316px;
+  top: 340px;
+  width: 280px; }
+
+#fourthP {
+  left: 420.5px;
+  top: 21px;
+  width: 220px; }
+
+#fifthP {
+  left: 880px;
+  top: 320px;
+  width: 200px; }
+
+#guidon:hover img, #selle:hover img, #roue_avant:hover img, #roue_arriere:hover img, #cadre:hover img {
+  width: 110%;
+  filter: drop-shadow(0 0 5px black);
+  transition: all 0.5s ease-in-out; }
+
+#guidon:hover, #selle:hover, #roue_avant:hover, #roue_arriere:hover, #cadre:hover {
+  z-index: 5;
+  transition: z-index 1.5s, left 1.5s ease-in-out, top 1.5s ease-in-out; }
+
+#guidon:hover + .text, #selle:hover + .text, #roue_avant:hover + .text, #roue_arriere:hover + .text, #cadre:hover + .text {
+  color: white;
+  border-left: 4px #EBC244 solid;
+  transition: left 1.2s ease-in-out, top 1.2s ease-in-out, color 1s ease, border 1s ease;
+  transition-delay: 0.3s;
+  z-index: 6; }
 
 * {
   padding: 0;
