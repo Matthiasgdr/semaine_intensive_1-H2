@@ -178,6 +178,7 @@ footer{
     background: linear-gradient(to top,#393939,#181818);
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     z-index: 15;
     .share{
@@ -200,6 +201,19 @@ footer{
             font-family: $font;
             font-weight: 800;
             margin: 0 0 30px 0;
+        }
+    }
+    .follow{
+        position: absolute;
+        bottom: 50px;
+        right: 200px;
+        p{
+            font-size: 2.4rem;
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        img{
+            margin: 0 10px;
         }
     }
 }
